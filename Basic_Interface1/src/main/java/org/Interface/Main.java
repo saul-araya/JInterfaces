@@ -30,11 +30,14 @@ public class Main {
         tabs.add("Register Window", view.getPanel());
         tabs.add("Control Window", view2.getPanel());
 
+        ImageIcon iconApp = new ImageIcon(Main.class.getResource("/iconApp.png"));
+
         window.add(tabs);
         window.setSize(800,500);
         window.setResizable(true);
         window.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         window.setTitle("RA-Register Application");
+        window.setIconImage(iconApp.getImage());
         window.setVisible(true);
     }
     public static Controller mainPageControl;
